@@ -38,14 +38,31 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         // 4
-        child: ListView.builder( //conStroi uma lista
+        child: ListView.builder(
+          //conStroi uma lista
           // 5
-          itemCount: Recipe.samples.length,
+          itemCount:
+              Recipe.samples.length, //numero de linhas que a lista possui
           // 6
           itemBuilder: (BuildContext context, int index) {
+            //controi a arvores de widget para cada linha
             // 7
-            // TODO: Update to return Recipe card
-            return Text(Recipe.samples[index].label);
+            Widget buildRecipeCard(Recipe recipe) {
+              // 1
+              return Card(
+                // 2
+                child: Column(
+                  // 3
+                  children: <Widget>[
+                    // 4
+                    Image(image: AssetImage(recipe.imageUrl)),
+                    // 5
+                    Text(recipe.label),
+                  ],
+                ),
+              );
+            }
+            return buildRecipeCard(Recipe.samples[index]);
           },
         ),
       ),
