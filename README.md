@@ -21,8 +21,10 @@
    ### Imagens do projeto
   <br>
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](assets/inicio.png) ![](assets/meio.png) 
-  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](assets/inicio.png)
   <br>
-  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](assets/dentro.png)![](assets/dentro(final).png) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](assets/meio.png) 
+  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](assets/dentro.png)
+  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](assets/dentro(final).png) 
