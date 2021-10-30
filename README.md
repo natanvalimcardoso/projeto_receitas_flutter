@@ -1,16 +1,21 @@
-# recipes
+<h1> Projeto de receitas em Flutter <h1> 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  > Status: Concluido ✔️
+  
+  ### Primeiro projeto finalizado em flutter utilizando o livro disponibilizado pela Google. Esse projeto é uma lista com várias receitas e clicando nelas você consegue ver os seus devidos ingredientes e também pode alterá los de acordo com a quantidade de porções.
+  
+  <br>
+  
+  <strong>Principais caracteristicas do projeto: </strong>
+  
+  + Imagens
+  + Listas 
+  + Páginas que podem retornar sem dar problemas
+  + Alinhamento 
+  + Uso de vários widgets diferentes
+  
+  <strong>Tecnologias usadas: </strong>
+   + Flutter
+  
+  
+   ### Imagens do projeto
