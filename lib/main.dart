@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'recipe.dart';
-
+import 'recipe_detail.dart';
 void main() {
   runApp(RecipeApp());
 }
@@ -17,7 +17,7 @@ class RecipeApp extends StatelessWidget {
           secondary: Colors.black,
         ),
       ),
-      home: const MyHomePage(title: 'Recipe Calculator'),
+      home: const MyHomePage(title: 'Receitas do Natan'),
     );
   }
 }
@@ -37,32 +37,50 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: SafeArea(
-        // 4
         child: ListView.builder(
-          //conStroi uma lista
-          // 5
           itemCount:
               Recipe.samples.length, //numero de linhas que a lista possui
-          // 6
+
           itemBuilder: (BuildContext context, int index) {
-            //controi a arvores de widget para cada linha
-            // 7
             Widget buildRecipeCard(Recipe recipe) {
-              // 1
               return Card(
-                // 2
-                child: Column(
-                  // 3
-                  children: <Widget>[
-                    // 4
-                    Image(image: AssetImage(recipe.imageUrl)),
-                    // 5
-                    Text(recipe.label),
-                  ],
+                elevation: 2.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0)),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: <Widget>[
+                      Image(image: AssetImage(recipe.imageUrl)),
+                      const SizedBox(
+                        height: 14.0,
+                      ),
+                      Text(
+                        recipe.label,
+                        style: const TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w700,
+                          fontFamily: 'Palatino',
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               );
             }
-            return buildRecipeCard(Recipe.samples[index]);
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return RecipeDetail(recipe: Recipe.samples[index]);
+                    },
+                  ),
+                );
+              },
+              child: buildRecipeCard(Recipe.samples[index]),
+            );
           },
         ),
       ),
